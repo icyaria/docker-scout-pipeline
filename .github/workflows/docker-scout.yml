@@ -1,0 +1,19 @@
+name: Docker Scout Scan
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docker-scout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Docker Scout Scan
+        uses: docker/scout-action@v1
+        with:
+          command: quickview
+          image: mariadb:10.3
