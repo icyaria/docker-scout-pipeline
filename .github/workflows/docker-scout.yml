@@ -22,5 +22,4 @@ jobs:
         uses: docker/scout-action@v1
         with:
           command: quickview
-          image: dage5500/suju
-
+          image: dage5500/suju #suju is my cat I HAD to include her somehow :)
