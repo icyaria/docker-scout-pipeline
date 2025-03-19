@@ -22,5 +22,5 @@ jobs:
         uses: docker/scout-action@v1
         with:
           command: quickview
-          image: mariadb:10.3
+          image: dage5500/suju
 
